@@ -1,0 +1,20 @@
+CREATE TABLE eoi (
+                     EOInumber INT AUTO_INCREMENT PRIMARY KEY,
+                     JobReferenceNumber CHAR(5),
+                     FirstName VARCHAR(20),
+                     LastName VARCHAR(20),
+                     StreetAddress VARCHAR(40),
+                     Suburb VARCHAR(40),
+                     State VARCHAR(3),
+                     Postcode VARCHAR(4),
+                     EmailAddress VARCHAR(100),
+                     PhoneNumber VARCHAR(15),
+                     Skill1 VARCHAR(20),
+                     Skill2 VARCHAR(20),
+                     Skill3 VARCHAR(20),
+                     Skill4 VARCHAR(20),
+                     Skill5 VARCHAR(20),
+                     Skill6 VARCHAR(20),
+                     OtherSkills TEXT,
+                     Status ENUM('New', 'Current', 'Final') DEFAULT 'New'
+);
